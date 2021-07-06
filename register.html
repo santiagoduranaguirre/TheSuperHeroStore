@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylesLogin.css">
+    <title>Registro</title>
+</head>
+<body>
+    <main>
+            <header class="header">
+                <div class="discount">
+                    <p>20% de descuento en todos los productos!</p>
+                </div>
+                <div class="titleHeader">
+                    <img src="./img/OBJECTS.png" alt="Laptop with store roof">
+                    <h1>The super hero store</h1>
+                </div>
+            </header>
+
+            <article  class="mainForm">
+                <h2 class="mainForm__title">Registro</h2>
+
+                <form action="#" class="mainForm__Login">                
+                    <input type="text" name="userName" id="userName"  placeholder="Nombre y Apellido" minlength="3" maxlength="15" class="mainForm__userName" required>
+                    <input type="email" name="userEmail" id="userEmail"  placeholder="Correo Electronico" class="mainForm__user" required>
+                    <input type="password" name="password" id="password"  placeholder="Contraseña" required class="mainForm__password">
+                    <input list="pais" name="pais" class="mainForm__labelCountry" placeholder="País">
+                        <datalist id="pais">
+                            <option>Argentina</option>
+                            <option>Colombia</option>
+                            <option>Brasil</option>
+                        </datalist>
+                    </label>
+                    <div>
+                        <button class="mainForm__buttonRegister">Registrar</button>
+                        <input type="reset" placeholder="Resetear" class="mainForm__buttonReset">
+                    </div>
+                </form>
+
+                <span class="mainForm__noAccount">¿Ya tenés una cuenta?</span>
+                <a href="./login.html" class="mainForm__register">Ingresá</a>
+
+            </article>
+
+            <footer class="footer">
+                <p>Todos los derechos reservados a FRONT END 1</p>
+            </footer>
+</body>
+</html>
